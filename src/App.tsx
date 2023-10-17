@@ -5,12 +5,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './App.css';
-import SignInPage from './components/pages/sign-in'
+import SignInPage from './components/sign-in'
+import Dashboard from './components/dashboard'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <SignInPage />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   },
 ]);
 
